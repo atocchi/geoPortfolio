@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
+import { useSelector, useDispatch } from 'react-redux'
+import { incrementByAmount } from '../store/Slice'
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
+
 
 
 function Map() {
@@ -9,7 +12,9 @@ function Map() {
     const [lng, setLng] = useState(-122.261240);
     const [lat, setLat] = useState(37.849860);
     const [zoom, setZoom] = useState(12);
-    const [company, setCompany] = useState('home')
+    const company = useSelector((state) => state.counter.value)
+
+    const dispatch = useDispatch()
 
     const hash = {
         'home': [-122.261240, 37.849860],
@@ -82,7 +87,7 @@ function Map() {
         let refer = e.target.ref;
         if(hash[refer] !== undefined){
             map.current.flyTo({center: [hash[refer][0], hash[refer][1]], essential: true, zoom: 12});
-            setCompany(refer);
+            dispatch(incrementByAmount(refer));
         }
     };
  
