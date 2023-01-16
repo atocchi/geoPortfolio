@@ -1,0 +1,28 @@
+{
+    "near": {
+        "company": "Near",
+        "location": "Remote(Pasadena, CA)",
+        "title": "Senior Full Stack Developer",
+        "start": "June 2021",
+        "stop": "Jan 2023",
+        "p1": "Mobile location services company with millions of unique geofence objects across the globe, billions of unique device IDs, and industry leader in mobile foot traffic, audience tracking, and other location data services. ",
+        "p2": "My work here includes: Working with product managers to develop and implement new features for new and legacy products. Working to architect a permissions system for new projects that syncs with legacy permissions and third party SSO. Working with product and project managers during standups to create epics, stories and bug tickets in Jira both for myself, and Junior developers I helped to manage. Working with maps and charts/graphs in conjunction with middleware API’s to make sure data was not only visualized, but that it was rate limited via access tokens. Working to implement measures in the API to curb SQL injection and keep status error handling useful, but not exploitable. Worked with Node and Ruby API’s in Fastify and Ruby on Rails, respectively, that connected to Mysql, Redis, Elastic Search, and Postgres databases. Created Lambda trigger microservices for CRON jobs in AWS for logins, sending email, and helping to make database migrations for users. Participated in many duties outside of basic development including, security and privacy reviews, mentoring new developers, and proctoring technical interviews of potential hires for both development and QA. "
+    },
+    "vms" : {
+        "company": "Visit My Studio",
+        "location": "Remote(UK))",
+        "title": "Full Stack Developer",
+        "start": "May 2020",
+        "stop": "June 2021",
+        "p1": "A Startup focused on connecting Artist with students, collectors, and other artists by setting up virtual visits in a two way marketplace. Our goal is for Artist to get paid without having to deal with a gallery by only taking a small percentage of each booking in order to make a profit.As this is a startup environment, my role was fluid, and I was responsible for some of the below.",
+        "p2": "Working with Django/Django REST backend and React.js frontend to create a platform for artists to showcase their studios and workspaces. Responsible for attending standup meetings and working with marketing, design, and QA/QC to develop the application and increase growth. Built  Utilizing Docker for development and deployment of the application to maintain security and create a universal testing environment in development. Tying in Stripe and Cloudinary as the payment platform and the CDN respectively.  Containerizing the app with docker, provisioning server with Terraform, and serving with AWS EC2 and proxying with nginx. Creating a Blog with Gatsby.js and GraphQL to drive users to the main application.Troubleshooting DevOps issues with SSL, EC2, and Route 53."
+    },
+    "vsce" : {
+        "company": "VSCE Inc.",
+        "location": "Oakland, California",
+        "title": "IT Sys Admin",
+        "start": "Sept 2018",
+        "stop": "June 2021",
+        "p1": "Maintains in-office LAN network while adding and attaching devices as necessary during periods of growth or onboarding. Troubleshoots any and all network, computer and email issues that the office encounters during its operations. Utilizes ISP knowledge to ensure that end user systems are running correctly and in line with ISP specifications. Maintaining network attached devices, APs,  routers, switches and general LAN architecture Upkeeping Office 365 working environment, including domains, sharepoint access, outlook/exchange and Azure AD"
+    }
+}
