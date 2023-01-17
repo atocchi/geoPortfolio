@@ -51,7 +51,7 @@ function Chart() {
     };
 
     return (
-        <div> 
+        <div className="chartCont"> 
             <HighchartsReact
                 highcharts={Highcharts}
                 options={options}

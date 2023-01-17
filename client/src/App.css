@@ -264,3 +264,49 @@
   margin-left: 7.5%;
   margin-right: 10%;
 }
+
+.textBox {
+  height: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.highcharts-title {
+  display: none
+}
+
+
+  @media (max-width: 600px){
+    .textBox {
+      height: 100%;
+    }
+    .chartCont {
+      position: absolute;
+      width: 100%;
+    }
+
+  }
+
+  .legend {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+  
+  }
+
+  @media (max-width: 600px){
+    .legend{
+      top: 50px;
+    }
+  }

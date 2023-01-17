@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import { useSelector, useDispatch } from 'react-redux'
-import { incrementByAmount } from '../store/Slice'
+import { useSelector, useDispatch } from 'react-redux';
+import { incrementByAmount } from '../store/Slice';
+import Legend from './Legend';
+
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
 
@@ -22,6 +24,14 @@ function Map() {
         'vsce': [-122.266130, 37.804660],
         'near': [-118.152458, 34.148621],
         'vms': [-0.305370, 51.619640]
+    }
+    
+    const classHash = {
+        "marker": 'home',
+        "marker-cal": 'cal',
+        "marker-vsce": 'vsce',
+        'marker-near' : 'near',
+        'marker-vms' : 'vms',
     }
 
     useEffect(() => {
@@ -83,8 +93,14 @@ function Map() {
 
     const clickHandler = (e) => {
         e.preventDefault();
-        console.log(e.target.ref);
-        let refer = e.target.ref;
+        console.log(e.target.className);
+        let refer ='';
+        if(e.target.className.length < 20){
+            refer = classHash[e.target.className];
+        }
+        else{
+            refer = e.target.ref;
+        }
         if(hash[refer] !== undefined){
             map.current.flyTo({center: [hash[refer][0], hash[refer][1]], essential: true, zoom: 12});
             dispatch(incrementByAmount(refer));
@@ -96,6 +112,13 @@ function Map() {
         <div className="map">
             <div className="sidebar">
                 Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+            </div>
+            <div className="legend" onClick={clickHandler}>
+                <div  className='marker-near'></div>
+                <div  className="marker-vms"></div>
+                <div  className="marker-vsce"></div>
+                <div  className="marker"></div>
+                <div  className="marker-cal"></div>
             </div>
             <div onClick={clickHandler} ref={mapContainer} className="map-container" />
         </div>

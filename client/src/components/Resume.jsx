@@ -11,26 +11,65 @@ function Resume() {
     
     return(
         <div className="resume">
+            <div className="textBox">
+            <h1>Andrew Tocchi</h1>
             {
                 job == 'home' ?
                 <Fragment>
-                    <div>
-                        "Hello World"
-                    </div>
+                    <h2>{jobs[job].title}</h2>
+                    <h2>{jobs[job].location}</h2>
+                    <br></br>
+                    <h1>Education</h1>
+                    {
+                        jobs[job].education.map((item, i) => {
+                            return(
+                                <div class='row'>
+                                    <h3>{item.name}</h3>
+                                    <div>
+                                        <h3>{item.school}</h3>
+                                        <h3>{item.date}</h3>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                    <br></br>
+                    <p>{jobs[job].about}</p>
+                </Fragment>
+                    :
+                job === 'cal' ?
+                <Fragment>
+                    <br></br>
+                    <h1>Education</h1>
+                    <h2>{jobs[job].location}</h2>
+                    {
+                        jobs[job].education.map((item, i) => {
+                            return(
+                                <div class='row'>
+                                    <h3>{item.name}</h3>
+                                    <div>
+                                        <h3>{item.school}</h3>
+                                        <h3>{item.date}</h3>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </Fragment>
                     :
                 <Fragment>
-                    <h1>Andrew Tocchi</h1>
-                    <h2>{jobs[job].company}</h2>
-                    <h2>{jobs[job].title}</h2>
-                    <h2>{jobs[job].location}</h2>
-                    <h2>{jobs[job].start + '-'  + jobs[job].stop}</h2>
-                    <br></br>
-                    <p>{jobs[job].p1}</p>
-                    <p>{jobs[job].p2}</p>
-                    <Chart />
+                        <h2>{jobs[job].company}</h2>
+                        <h2>{jobs[job].title}</h2>
+                        <h2>{jobs[job].location}</h2>
+                        <h2>{jobs[job].start + '-'  + jobs[job].stop}</h2>
+                        <br></br>
+                        <p>{jobs[job].p1}</p>
+                        <p>{jobs[job].p2}</p>
+                        
                 </Fragment>
             }
+            </div>
+            <Chart />
         </div>
     )
 }

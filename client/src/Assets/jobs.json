@@ -30,7 +30,15 @@
         "languages": [["Bash", 10],["Powershell", 10], ["Express", 7], ["Python", 4], ["Azure AD", 10],["Office 365", 10]]
     },
     "home" : {
-        "title": "Andrew Tocchi",
-        "location": "Oakland, California"
-    }
+        "title": "Senior Full Stack developer",
+        "location": "Oakland, California",
+        "about": "Senior Full Stack developer and UC Berkeley graduate with a formal education in fine art and working experience at a major ISP. JavaScript, Python, Ruby, PHP and multiple front and backend frameworks and extensive experience working within AWS to deploy scalable fullstack applications. Microservice and containerization experience from moving legacy code into the modern world architecturally.  ",
+        "education": [{"name":"Full Stack web Developer Certificate:", "date": "Dec 2019","school": "UC Berkeley"},{"name":"Bachelor’s Art Practice", "date": "May 2012", "school": "UC Berkeley"},{"name":"Bachelor’s Medieval History", "date": "May 2012","school": "UC Berkeley"} ],
+        "languages": [["Vue", 10],["Node", 10], ["Fastify", 10], ["Ruby", 5], ["Angular.js", 3], ["AWS", 10], ["Redis", 10], ["TypeScript", 4], ["Postgres", 8], ["Mysql", 9],["Bash", 10],["Powershell", 10], ["Express", 7], ["Python", 4], ["Azure AD", 10],["Office 365", 10], ["React", 10],["Node", 10], ["Django", 7], ["Gatsby", 10], ["GraphQL", 5] ]
+    },
+    "cal": {
+        "location": "Berkeley, California",
+        "education": [{"name":"Full Stack web Developer Certificate:", "date": "Dec 2019","school": "UC Berkeley"},{"name":"Bachelor’s Art Practice", "date": "May 2012", "school": "UC Berkeley"},{"name":"Bachelor’s Medieval History", "date": "May 2012","school": "UC Berkeley"} ],
+        "languages": [["English", 10],["Latin", 7], ["Scheme", 4], ["French", 2]]
+    }    
 }
