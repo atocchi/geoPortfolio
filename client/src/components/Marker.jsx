@@ -1,6 +1,6 @@
 function Marker(props) {
     return(
-        <div class="marker"></div>
+        <div className="marker"></div>
     )
 }
 

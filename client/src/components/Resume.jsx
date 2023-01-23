@@ -23,11 +23,11 @@ function Resume() {
                     {
                         jobs[job].education.map((item, i) => {
                             return(
-                                <div class='row'>
-                                    <h3>{item.name}</h3>
-                                    <div>
-                                        <h3>{item.school}</h3>
-                                        <h3>{item.date}</h3>
+                                <div key={i + 'r'} className='row'>
+                                    <h3 key={i + 'n'}>{item.name}</h3>
+                                    <div key={i + 'd'}>
+                                        <h3 key={i + 's'}>{item.school}</h3>
+                                        <h3 key={i + 't'}>{item.date}</h3>
                                     </div>
                                 </div>
                             )
@@ -45,11 +45,11 @@ function Resume() {
                     {
                         jobs[job].education.map((item, i) => {
                             return(
-                                <div class='row'>
-                                    <h3>{item.name}</h3>
-                                    <div>
-                                        <h3>{item.school}</h3>
-                                        <h3>{item.date}</h3>
+                                <div key={i + 'r'} className='row'>
+                                    <h3 key={i + 'n'}>{item.name}</h3>
+                                    <div key={i + 'd'}>
+                                        <h3 key={i + 's'}>{item.school}</h3>
+                                        <h3 key={i + 't'}>{item.date}</h3>
                                     </div>
                                 </div>
                             )

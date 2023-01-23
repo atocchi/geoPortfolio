@@ -41,9 +41,22 @@ function Map() {
         container: mapContainer.current,
         style: 'mapbox://styles/mapbox/outdoors-v12',    
         center: [lng, lat],
-        zoom: zoom});
+        zoom: zoom,
+        });
 
         map.current.addControl(new mapboxgl.NavigationControl());
+
+        map.current.addControl(
+            new mapboxgl.GeolocateControl({
+                positionOptions: {
+                enableHighAccuracy: true
+            },
+
+            trackUserLocation: true,
+
+            showUserHeading: true
+            })
+        );
 
         const me = document.createElement('div');
         me.className = 'marker';
@@ -119,6 +132,11 @@ function Map() {
                 <div  className="marker-vsce"></div>
                 <div  className="marker"></div>
                 <div  className="marker-cal"></div>
+            </div>
+            <div className="email" href="mailto:andrewtocchi@gmail.com">
+                <a  href={`mailto:andrewtocchi@gmail.com?subject=im%20looking%20at%20_lat${lat}_long${lng}%20how%20are%20you%20doing?`}>
+                    Contact Me
+                </a>
             </div>
             <div onClick={clickHandler} ref={mapContainer} className="map-container" />
         </div>
