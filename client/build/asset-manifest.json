@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.abf61025.css",
+    "main.js": "/static/js/main.0d479d27.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/js/mapbox-gl-csp-worker.3074caea.worker.js": "/static/js/mapbox-gl-csp-worker.3074caea.worker.js",
+    "static/media/cal.jpeg": "/static/media/cal.4f453dd39977e92867db.jpeg",
+    "static/media/me.jpeg": "/static/media/me.df970c7a76e7543f3698.jpeg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "static/media/mapboxgl-ctrl-geolocate.svg": "/static/media/mapboxgl-ctrl-geolocate.4d251ed31cf0d9333322.svg",
+    "static/media/mapboxgl-ctrl-zoom-in.svg": "/static/media/mapboxgl-ctrl-zoom-in.360b13dd01984aeac550.svg",
+    "static/media/mapboxgl-ctrl-zoom-out.svg": "/static/media/mapboxgl-ctrl-zoom-out.a9950ef03ec4844753f2.svg",
+    "static/media/mapboxgl-ctrl-compass.svg": "/static/media/mapboxgl-ctrl-compass.d8b31cf08a55b363bf54.svg",
+    "main.abf61025.css.map": "/static/css/main.abf61025.css.map",
+    "main.0d479d27.js.map": "/static/js/main.0d479d27.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abf61025.css",
+    "static/js/main.0d479d27.js"
+  ]
+}
