@@ -130,16 +130,15 @@
 
 .area{
     background: #4c6874;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
     width: 100%;
-    height:100vh;
+    height:100%;
     
    
 }
 
 .circles{
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -325,6 +324,12 @@
     .email{
       top: 350px;
     }
+    .circles{
+      top: 37.5%;
+    }
+    .mapboxgl-ctrl-top-right{
+      top: 15%;
+    }
   }
 .glass {
   z-index: 7;
@@ -347,3 +352,22 @@
   margin-right: 10%;
   margin-top: 10%;
 }
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  background-image: url("./Assets/mapboxgl-ctrl-zoom-out.svg");
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+  background-image: url("./Assets/mapboxgl-ctrl-compass.svg");
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+  background-image: url("./Assets/mapboxgl-ctrl-zoom-in.svg");
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+  background-image: url("./Assets/mapboxgl-ctrl-geolocate.svg");
+}
+
+.mapboxgl-ctrl-icon{
+  padding-right: 30px; 
+} 

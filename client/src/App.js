@@ -8,7 +8,7 @@ import Modal from './components/Modal'
 
 
 function App() {
-  const [bool, setBool] = useState(true);
+  const [bool, setBool] = useState(false);
 
   return (
     <div className="App">

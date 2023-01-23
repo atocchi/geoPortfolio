@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
+// import "mapbox-gl/dist/mapbox-gl.css";
 import { useSelector, useDispatch } from 'react-redux';
 import { incrementByAmount } from '../store/Slice';
 import Legend from './Legend';
