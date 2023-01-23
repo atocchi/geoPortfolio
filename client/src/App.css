@@ -265,7 +265,7 @@
 }
 
 .textBox {
-
+  height: 525px;
 }
 
 .row {
@@ -281,7 +281,7 @@
 
   @media (max-width: 600px){
     .textBox {
-      height: 100%;
+      height: 660px;
     }
     .chartCont {
       
