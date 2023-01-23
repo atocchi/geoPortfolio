@@ -20,6 +20,7 @@ function Resume() {
                     <h2>{jobs[job].location}</h2>
                     <br></br>
                     <h1>Education</h1>
+                    <br></br>
                     {
                         jobs[job].education.map((item, i) => {
                             return(
@@ -42,6 +43,7 @@ function Resume() {
                     <br></br>
                     <h1>Education</h1>
                     <h2>{jobs[job].location}</h2>
+                    <br></br>
                     {
                         jobs[job].education.map((item, i) => {
                             return(
