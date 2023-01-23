@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { incrementByAmount } from '../store/Slice';
 import Legend from './Legend';
 
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
 
